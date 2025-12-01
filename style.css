@@ -1,0 +1,418 @@
+﻿/* 合并后的统一样式文件 */
+
+/* 通用重置和基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("background.webp");
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 12px;
+    color: #000;
+    line-height: 1.5;
+}
+
+/* 顶部区域 */
+#top {
+    height: 104px;
+    background-image: url("background.webp");
+}
+
+
+
+/* 主内容区域 */
+#main {
+    background-image: url("background.webp");
+}
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+.titlebar {
+    background: linear-gradient(to bottom, #7a7979 0%, #3b3d3e 50%, #060f11 51%, #133c50 100%);
+  
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    padding: 8px 0;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.titlebar h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 10px;
+    color: #ffffff;
+}
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.content {
+    padding: 20px 0;
+}
+
+/* 标题栏 */
+.titlebar {
+    background: linear-gradient(to bottom, #7a7979 0%, #3b3d3e 50%, #060f11 51%, #133c50 100%);
+    background-repeat: no-repeat;
+    color: #ff0000;
+    background-size: 100% 100%;
+    transition: background-image 0.5s ease-in-out;
+    padding: 8px 0;
+}
+
+.titlebar h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.h {
+    background: linear-gradient(to bottom, #82AFBE 0%, #498BA0 50%, #115E77 51%, #529CAB 100%);
+}
+
+/* 文本样式 */
+.e {
+    color: #F94F06;
+}
+
+
+
+a:hover {
+    color: #33D7FF;
+}
+
+a:active {
+    color: #FF6600;
+}
+
+hr {
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+    font-family: "Times New Roman", Georgia, serif;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Times New Roman", Georgia, serif;
+    color: #000000;
+}
+
+/* 列表样式 */
+ol {
+    font-size: 16px;
+}
+
+ul {
+    padding-left: 40px;
+    list-style-type: disc;
+    margin: 8px;
+}
+.navbar {
+    width: 100%;
+    height: 16px;
+    background: linear-gradient(to bottom, #fefefe 0%, #E5EAF5 30%, #D4DBED 31%, #E1E6F6 100%); 
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar ul {
+    line-height: 16px;
+    font-size: 12px;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.navbar li {
+    height: 16px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    line-height: 16px;
+    font-size: 12px;
+    height: 100%;
+    display: block;
+    
+    color: #000000;
+    text-decoration: none;
+    padding: 0px 12px 6px 6px;
+    
+}
+
+.navbar a:hover {
+    height: 16px;
+    background: #a7a7a7;
+}
+
+.navbar img {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+/* 表格样式 */
+table {
+    width: 1024px;
+    color: #FFFFFF;
+    border-collapse: collapse;
+}
+
+th, tr {
+    border: 2px solid #E8A542;
+}
+.sidebar {
+    float: right;
+    width: 280px;
+}
+.window {
+    margin-bottom: 15px;
+    border: 1px solid #F7F9FC;
+	border-right: 1px soild #2CD3FE;
+    border-bottom: 1px solid #2CD3FE;
+    border-right: 1px solid #2CD3FE;
+    box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.7);
+    border-top: 0px;
+    border-top: 0px;
+	border-radius: 3px;
+    background-image: url(windowbackground.png);
+}
+
+.window-titlebar {
+    background: linear-gradient(to bottom, #82AFBE 0%, #498BA0 50%, #115E77 51%, #529CAB 100%); 
+   
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    
+    padding: 4px 8px;
+     border-bottom: 1px solid #447799;
+}
+
+.window-content {
+    padding: 10px;
+}
+/* 播放器相关样式 */
+.video-container {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-player {
+    position: relative;
+    background: #334B6F;
+    
+    margin: 0 auto;
+}
+
+#main-video {
+    width: 100%;
+    display: block;
+}
+
+/* 自定义播放器控件 */
+.player-controls {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #82AFBE 0%, #498BA0 50%, #115E77 51%, #529CAB 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+.video-player:hover .player-controls {
+    opacity: 1;
+}
+
+.control-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0 5px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.play-btn {
+    width: 32px;
+    height: 32px;
+    background-image: url('assets/play.png');
+}
+
+.pause-btn {
+    width: 32px;
+    height: 32px;
+    background-image: url('assets/pause.png');
+}
+
+.mute-btn {
+    width: 16px;
+    height: 16px;
+    background-image: url('assets/sound.png');
+}
+
+.muted-btn {
+    width: 16px;
+    height: 16px;
+    background-image: url('assets/sound.png');
+}
+
+.fullscreen-btn {
+    width: 16px;
+    height: 16px;
+    background-image: url('assets/full.png');
+}
+
+.exit-fullscreen-btn {
+    width: 16px;
+    height: 16px;
+    background-image: url('assets/full.png');
+}
+
+.progress-container {
+    flex: 1;
+    height: 5px;
+    background: #555;
+    margin: 0 10px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #0F41CD;
+    border-radius: 2px;
+    width: 0%;
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.volume-slider {
+    width: 70px;
+    margin-left: 5px;
+    webkit-appearance: none;-
+    height: 3px;
+    background: #555;
+    border-radius: 5px;
+    outline: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background-image: url('assets/dot.png');
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background-image: url('assets/dot.png');
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.time-display {
+    color: #fff;
+    font-size: 12px;
+    margin: 0 10px;
+    min-width: 80px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+/* 加载指示器 */
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 5px solid #fff;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+
+/* 响应式设计 */
+@media (max-width: 1000px) {
+    .wrap {
+        width: 95%;
+    }
+
+    .video-player {
+        height: auto;
+    }
+
+    .player-controls {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    .progress-container {
+        order: 3;
+        flex: 0 0 100%;
+        margin-top: 5px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
